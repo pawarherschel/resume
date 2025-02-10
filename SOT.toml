@@ -1,344 +1,242 @@
-[metadata]
-firstName = "Herschel"
-lastName = "Pawar"
-headerQuote = [
-  "Passionate about learning and creating; Looking forward to whatever the future brings.",
-  "I occasionally write! Check out my blog and more details at https://sakurakat.systems/",
-]
-awesomeColor = "red"
-profilePhoto = "/src/photo.png"
-varLanguage = "en-US"
-varEntrySocietyFirst = false
-varDisplayLogo = true
-cvFooter = "Curriculum vitae"
-letterFooter = "Cover Letter"
-
-[metadata.personalInfo]
-homepage = "sakurakat.systems"
-phone = "+91 83107 83472"
-github = "pawarherschel"
-linkedin = "pawarherschel"
-email = "pawarherschel@sakurakat.systems"
-orcid = "0009-0003-3218-801X"
+metadata = "./metadata.toml"
 
 [[certificates]]
-date = "1st - 26th July 2024"
-title = "Certificate of Participation in Coventry University Summer Schools Games Design Programme"
-issuer = "Shawnna Pomeroy (Programme Manager - Summer Schools)"
-url = "https://r2.sakurakat.systems/covuni-s-school.pdf"
-location = "Coventry University, United Kingdom"
+  date     = "1st - 26th July 2024"
+  issuer   = "Shawnna Pomeroy (Programme Manager - Summer Schools)"
+  location = "Coventry University, United Kingdom"
+  title    = "Certificate of Participation in Coventry University Summer Schools Games Design Programme"
+  url      = "https://r2.sakurakat.systems/covuni-s-school.pdf"
 
 [[certificates]]
-date = "1st - 26th July 2024"
-title = "Certificate of Participation in Coventry University's School of Computing, Mathematics and Data Science Summer School in Game Development"
-issuer = "Adam Worrallo (Head of Summer School), Faye Mitchell (Head of School), Becky Butler (Dean of College)"
-url = "https://r2.sakurakat.systems/covuni-gamedev.pdf"
-location = "Coventry University, United Kingdom"
+  date     = "1st - 26th July 2024"
+  issuer   = "Adam Worrallo (Head of Summer School), Faye Mitchell (Head of School), Becky Butler (Dean of College)"
+  location = "Coventry University, United Kingdom"
+  title    = "Certificate of Participation in Coventry University's School of Computing, Mathematics and Data Science Summer School in Game Development"
+  url      = "https://r2.sakurakat.systems/covuni-gamedev.pdf"
 
 [[education]]
-title = "Global Summer School"
-society = "Coventry University"
-date = "1st July 2024 - 26th July 2024"
-location = "CU Coventry, 8 Mile Lane, Coventry CV1 2TU, United Kingdom"
-logo = "src/logos/covuni.jpg"
-description = []
+  date        = "1st July 2024 - 26th July 2024"
+  description = []
+  location    = "CU Coventry, 8 Mile Lane, Coventry CV1 2TU, United Kingdom"
+  logo        = "src/logos/covuni.jpg"
+  society     = "Coventry University"
+  title       = "Global Summer School"
 
 [[education]]
-title = "Bachelors of Engineering in Information Technology"
-society = "University of Mumbai"
-date = "2020 - 2024"
-location = "MGM College of Engineering and Technology, Kamothe, Navi Mumbai, India"
-logo = "src/logos/mgmcet.jpeg"
-description = []
+  date        = "2020 - 2024"
+  description = []
+  location    = "MGM College of Engineering and Technology, Kamothe, Navi Mumbai, India"
+  logo        = "src/logos/mgmcet.jpeg"
+  society     = "University of Mumbai"
+  title       = "Bachelors of Engineering in Information Technology"
 
 [[education]]
-title = "Higher Secondary School Certificate"
-society = "Central Board of Secondary Education"
-date = "2018 - 2020"
-location = "Greenfingers Global School, Kharghar, Navi Mumbai, India"
-logo = "src/logos/gfgs.png"
-description = []
+  date        = "2018 - 2020"
+  description = []
+  location    = "Greenfingers Global School, Kharghar, Navi Mumbai, India"
+  logo        = "src/logos/gfgs.png"
+  society     = "Central Board of Secondary Education"
+  title       = "Higher Secondary School Certificate"
 
 [[education]]
-title = "Secondary School Certificate"
-society = "Indian Certificate of Secondary Education"
-date = "2008 - 2018"
-location = "Sanjivani International School, Kharghar, Navi Mumbai, India"
-logo = "src/logos/sis.png"
-description = []
+  date        = "2008 - 2018"
+  description = []
+  location    = "Sanjivani International School, Kharghar, Navi Mumbai, India"
+  logo        = "src/logos/sis.png"
+  society     = "Indian Certificate of Secondary Education"
+  title       = "Secondary School Certificate"
 
 [[projects]]
-description = [
-  "\"Fractured Elements\" is a 2D platformer developed for Coventry University's Summer School Game Jam.",
-  "The main character changes form every few seconds and each form has a unique associated attack.",
-  "Available to play on itch.io (https://pawarherschel.itch.io/fractured-elements)",
-  "My contribution: Worked on game mechanics, character transitions, and attack implementations using Unity and CSharp",
-]
-visible = true
-title = "Fractured Elements"
-society = "Coventry University Summer School '24 Game Jam"
-date = "July 2024"
-tags = ["Game Development", "Unity", "C#"]
-preview = "https://r2.sakurakat.systems/covuni-experience-banner.jpg"
-[projects.location]
-github = "pawarherschel/CovUniGJ2024"
+  date        = "July 2024"
+  description = ["\"Fractured Elements\" is a 2D platformer developed for Coventry University's Summer School Game Jam.", "The main character changes form every few seconds and each form has a unique associated attack.", "Available to play on itch.io (https://pawarherschel.itch.io/fractured-elements)", "My contribution: Worked on game mechanics, character transitions, and attack implementations using Unity and CSharp"]
+  preview     = "https://r2.sakurakat.systems/covuni-experience-banner.jpg"
+  society     = "Coventry University Summer School '24 Game Jam"
+  tags        = ["Game Development", "Unity", "C#"]
+  title       = "Fractured Elements"
+  visible     = true
+  [projects.location]
+    github = "pawarherschel/CovUniGJ2024"
 
 [[projects]]
-preview = "https://r2.sakurakat.systems/preview--cosmos-conquerors.png"
-visible = true
-title = "Cosmos Conquerors (GMTK2023)"
-society = "GMTK2023 Game Jam"
-date = "2023"
-description = [
-  "A game made for the GMTK Game Jam 2023, the theme was 'Roles Reverse'.",
-  "This is a simple game where the roles from the game Space Invaders are reversed.",
-  "Available to play on itch.io (https://pawarherschel.itch.io/cosmos-conquerors)",
-  "My contribution: The whole game.",
-]
-tags = ["Game Development", "Godot", "GDScript"]
-[projects.location]
-github = "pawarherschel/GMTK2023"
+  date        = "2023"
+  description = ["A game made for the GMTK Game Jam 2023, the theme was 'Roles Reverse'.", "This is a simple game where the roles from the game Space Invaders are reversed.", "Available to play on itch.io (https://pawarherschel.itch.io/cosmos-conquerors)", "My contribution: The whole game."]
+  preview     = "https://r2.sakurakat.systems/preview--cosmos-conquerors.png"
+  society     = "GMTK2023 Game Jam"
+  tags        = ["Game Development", "Godot", "GDScript"]
+  title       = "Cosmos Conquerors (GMTK2023)"
+  visible     = true
+  [projects.location]
+    github = "pawarherschel/GMTK2023"
 
 [[projects]]
-visible = true
-title = "Bevy Pong"
-society = "Personal Project"
-date = "October 2024"
-description = [
-  "A simple Pong game made with Bevy. It's being used as playground for networking.",
-  "My contribution: The whole game.",
-]
-tags = ["Rust", "Bevy", "Game Development"]
-preview = "https://r2.sakurakat.systems/preview--bevy-pong.png"
-[projects.location]
-github = "pawarherschel/bevy-pong"
+  date        = "October 2024"
+  description = ["A simple Pong game made with Bevy. It's being used as playground for networking.", "My contribution: The whole game."]
+  preview     = "https://r2.sakurakat.systems/preview--bevy-pong.png"
+  society     = "Personal Project"
+  tags        = ["Rust", "Bevy", "Game Development"]
+  title       = "Bevy Pong"
+  visible     = false
+  [projects.location]
+    github = "pawarherschel/bevy-pong"
 
 [[projects]]
-visible = false
-title = "Various Simple Games made in Godot"
-society = "Personal Projects"
-date = "2021"
-description = [
-  "Various simple games made in Godot as Proof of Concepts for learning purposes",
-  "Includes Jump Cat, Meme Invaders, Maze Generation, Pop The Lock, Magical Marshmellow, Game Of Life, Minesweeper, Pong, Snake",
-  "Available at https://github.com/SakuraKat",
-  "My contribution: Developed all the games in Godot",
-]
-tags = ["Godot", "GDScript"]
-preview = "https://r2.sakurakat.systems/preview--sakurakat.png"
-[projects.location]
-github = "SakuraKat"
+  date        = "2021"
+  description = ["Various simple games made in Godot as Proof of Concepts for learning purposes", "Includes Jump Cat, Meme Invaders, Maze Generation, Pop The Lock, Magical Marshmellow, Game Of Life, Minesweeper, Pong, Snake", "Available at https://github.com/SakuraKat", "My contribution: Developed all the games in Godot"]
+  preview     = "https://r2.sakurakat.systems/preview--sakurakat.png"
+  society     = "Personal Projects"
+  tags        = ["Godot", "GDScript"]
+  title       = "Various Simple Games made in Godot"
+  visible     = false
+  [projects.location]
+    github = "SakuraKat"
 
 [[projects]]
-visible = false
-title = "VRCX Insights"
-society = "Personal Project"
-date = "2023 - Present"
-description = [
-  "A simple program to find out the various friend circles which might exist via the data collected by VRCX",
-  "Written in Rust, it uses the SQLite database created by VRCX to find out the friend circles",
-  "My contribution: Implemented data-mining algorithms in Rust",
-]
-tags = ["Data Mining", "Rust", "SQLite", "SQLx", "tokio"]
-preview = "https://r2.sakurakat.systems/preview--vrcx-insights-resized-0.25.jpg"
-[projects.location]
-github = "pawarherschel/vrcx-insights"
+  date        = "2023 - Present"
+  description = ["A simple program to find out the various friend circles which might exist via the data collected by VRCX", "Written in Rust, it uses the SQLite database created by VRCX to find out the friend circles", "My contribution: Implemented data-mining algorithms in Rust"]
+  preview     = "https://r2.sakurakat.systems/preview--vrcx-insights-resized-0.25.jpg"
+  society     = "Personal Project"
+  tags        = ["Data Mining", "Rust", "SQLite", "SQLx", "tokio"]
+  title       = "VRCX Insights"
+  visible     = false
+  [projects.location]
+    github = "pawarherschel/vrcx-insights"
 
 [[projects]]
-visible = false
-title = "Booth Archiver"
-society = "Personal Project"
-date = "2023 - Present"
-description = [
-  "A simple CLI tool to archive the contents of your booth wishlist. It scrapes the data and compiles it into an Excel spreadsheet for ease of use.",
-  "My contribution: Developed scraping logic, implemented Excel sheet generation",
-]
-tags = ["Web Scraping", "Rust", "Rayon", "ureq", "Excel"]
-preview = "https://r2.sakurakat.systems/preview--booth-archiver.png"
-[projects.location]
-github = "pawarherschel/booth_archiver"
+  date        = "2023 - Present"
+  description = ["A simple CLI tool to archive the contents of your booth wishlist. It scrapes the data and compiles it into an Excel spreadsheet for ease of use.", "My contribution: Developed scraping logic, implemented Excel sheet generation"]
+  preview     = "https://r2.sakurakat.systems/preview--booth-archiver.png"
+  society     = "Personal Project"
+  tags        = ["Web Scraping", "Rust", "Rayon", "ureq", "Excel"]
+  title       = "Booth Archiver"
+  visible     = false
+  [projects.location]
+    github = "pawarherschel/booth_archiver"
 
 [[projects]]
-visible = false
-title = "Real-Time WebSocket Synchronization with Durable Objects"
-society = "Personal Project"
-date = "December 2024"
-description = [
-  "This repository contains a Cloudflare Workers project that demonstrates the use of Durable Objects to synchronize WebSocket connections.",
-  "It allows clients to send messages to increment, decrement, or get the current value of the counter, and broadcasts the updated counter value to all connected clients.",
-  "My contribution: Built the WebSocket logic, integrated Durable Objects, and ensured real-time synchronization among multiple clients.",
-]
-tags = [
-  "Cloudflare Workers",
-  "Durable Objects",
-  "WebSocket",
-  "TypeScript",
-  "Real-time Communication",
-  "Serverless",
-]
-preview = "https://r2.sakurakat.systems/preview--workers-websocket-durable-objects.png"
-[projects.location]
-github = "pawarherschel/workers-durable-object-websocket-synced"
+  date        = "December 2024"
+  description = ["This repository contains a Cloudflare Workers project that demonstrates the use of Durable Objects to synchronize WebSocket connections.", "It allows clients to send messages to increment, decrement, or get the current value of the counter, and broadcasts the updated counter value to all connected clients.", "My contribution: Built the WebSocket logic, integrated Durable Objects, and ensured real-time synchronization among multiple clients."]
+  preview     = "https://r2.sakurakat.systems/preview--workers-websocket-durable-objects.png"
+  society     = "Personal Project"
+  tags        = ["Cloudflare Workers", "Durable Objects", "WebSocket", "TypeScript", "Real-time Communication", "Serverless"]
+  title       = "Real-Time WebSocket Synchronization with Durable Objects"
+  visible     = false
+  [projects.location]
+    github = "pawarherschel/workers-durable-object-websocket-synced"
 
 [[projects]]
-visible = false
-title = "Brainfuck Compiler with Cranelift"
-society = "Personal Project"
-date = "November 2024"
-description = [
-  "Following a blogpost https://rodrigodd.github.io/2022/11/26/bf_compiler-part3.html",
-]
-tags = ["Brainfuck", "Compiler", "Cranelift", "Rust"]
-preview = "https://r2.sakurakat.systems/preview--bf-compiler.png"
-[projects.location]
-github = "pawarherschel/BFCranelift"
+  date        = "November 2024"
+  description = ["Following a blogpost https://rodrigodd.github.io/2022/11/26/bf_compiler-part3.html"]
+  preview     = "https://r2.sakurakat.systems/preview--bf-compiler.png"
+  society     = "Personal Project"
+  tags        = ["Brainfuck", "Compiler", "Cranelift", "Rust"]
+  title       = "Brainfuck Compiler with Cranelift"
+  visible     = false
+  [projects.location]
+    github = "pawarherschel/BFCranelift"
 
 [[projects]]
-visible = true
-title = "Krita Palette Creator"
-society = "Personal Project"
-date = "September 2024"
-description = [
-  "A tool to create Krita and GIMP compatible palettes from images by applying color quantization algorithms.",
-  "It generates a `.gpl` palette file and creates a preview image for visual reference. Supports adjustable depth levels for quantization and optional color tolerance settings. View an example here: https://r2.sakurakat.systems/preview--krita-palette-creator.png",
-  "My contribution: Contributed to rosettacode https://rosettacode.org/wiki/Color_quantization#Rust, and implemented color deduplication by using similarity score.",
-]
-tags = [
-  "Rust",
-  "Image Processing",
-  "Color Quantization",
-  "Krita",
-  "GIMP",
-  "CLI Tool",
-]
-preview = "https://r2.sakurakat.systems/preview--krita-palette-creator.png"
-[projects.location]
-github = "pawarherschel/krita-palette-creator"
+  date        = "September 2024"
+  description = ["A tool to create Krita and GIMP compatible palettes from images by applying color quantization algorithms.", "It generates a `.gpl` palette file and creates a preview image for visual reference. Supports adjustable depth levels for quantization and optional color tolerance settings. View an example here: https://r2.sakurakat.systems/preview--krita-palette-creator.png", "My contribution: Contributed to rosettacode https://rosettacode.org/wiki/Color_quantization#Rust, and implemented color deduplication by using similarity score."]
+  preview     = "https://r2.sakurakat.systems/preview--krita-palette-creator.png"
+  society     = "Personal Project"
+  tags        = ["Rust", "Image Processing", "Color Quantization", "Krita", "GIMP", "CLI Tool"]
+  title       = "Krita Palette Creator"
+  visible     = false
+  [projects.location]
+    github = "pawarherschel/krita-palette-creator"
 
 [[projects]]
-visible = false
-title = "Ray Tracing in Rust"
-society = "Personal Project"
-date = "November 2023"
-description = [
-  "Made by following raytracing in a weekend",
-  "Parallelly processes with Rayon and provides progress indication using the Indicatif crate.",
-  "The implementation includes image output in both PPM and PNG formats.",
-  "My contribution: Implemented parallel processing with Rayon and explored cpu-based raytracing",
-]
-tags = ["Ray Tracing", "Rust", "Rayon", "image"]
-preview = "https://r2.sakurakat.systems/preview--raytracer.png"
-[projects.location]
-github = "pawarherschel/raytracinginrust"
+  date        = "November 2023"
+  description = ["Made by following raytracing in a weekend", "Parallelly processes with Rayon and provides progress indication using the Indicatif crate.", "The implementation includes image output in both PPM and PNG formats.", "My contribution: Implemented parallel processing with Rayon and explored cpu-based raytracing"]
+  preview     = "https://r2.sakurakat.systems/preview--raytracer.png"
+  society     = "Personal Project"
+  tags        = ["Ray Tracing", "Rust", "Rayon", "image"]
+  title       = "Ray Tracing in Rust"
+  visible     = false
+  [projects.location]
+    github = "pawarherschel/raytracinginrust"
 
 [[others]]
-visible = false
-title = "Kait"
-society = "VRoid Studio"
-date = "2021"
-description = [
-  "Created an original character (OC) using VRoid Studio.",
-  "Utilized self-taught Photoshop skills to create textures and assets for the OC.",
-  "VRM file: https://r2.sakurakat.systems/kait.vrm",
-  "My contribution: Modeled the character, customized textures, and refined assets using Photoshop.",
-]
-tags = ["VRoid Studio", "Photoshop", "Texture Creation", "Character Design"]
-preview = "https://r2.sakurakat.systems/preview--kait.png"
-location = "https://sketchfab.com/3d-models/kait-57e49bfc4c3e4955bdb99b39cf254559"
+  date        = "2021"
+  description = ["Created an original character (OC) using VRoid Studio.", "Utilized self-taught Photoshop skills to create textures and assets for the OC.", "VRM file: https://r2.sakurakat.systems/kait.vrm", "My contribution: Modeled the character, customized textures, and refined assets using Photoshop."]
+  location    = "https://sketchfab.com/3d-models/kait-57e49bfc4c3e4955bdb99b39cf254559"
+  preview     = "https://r2.sakurakat.systems/preview--kait.png"
+  society     = "VRoid Studio"
+  tags        = ["VRoid Studio", "Photoshop", "Texture Creation", "Character Design"]
+  title       = "Kait"
+  visible     = false
 
 [[others]]
-visible = false
-title = "Rust for Lunch"
-society = "Pixel Art"
-date = "March 2024"
-description = [
-  "Designed fan art for 'Rust for Lunch', an online meetup attended.",
-  "My contribution: Created the artwork using pixel art tools",
-]
-tags = ["Pixel Art", "Fan Art", "Rust for Lunch"]
-preview = "https://r2.sakurakat.systems/preview--rfl.png"
-location = "https://r2.sakurakat.systems/preview--rfl.png"
+  date        = "March 2024"
+  description = ["Designed fan art for 'Rust for Lunch', an online meetup attended.", "My contribution: Created the artwork using pixel art tools"]
+  location    = "https://r2.sakurakat.systems/preview--rfl.png"
+  preview     = "https://r2.sakurakat.systems/preview--rfl.png"
+  society     = "Pixel Art"
+  tags        = ["Pixel Art", "Fan Art", "Rust for Lunch"]
+  title       = "Rust for Lunch"
+  visible     = false
 
 [[others]]
-description = [
-  "Designed logo for 'Fractured Elements'game.",
-  "My contribution: Conceptualized and designed the logo using Pixelorama to represent the game's theme.",
-]
-visible = false
-title = "Fractured Elements"
-society = "Pixel Art"
-date = "March 2024"
-tags = ["Pixel Art", "Logo Design", "Fractured Elements", "Pixelorama"]
-preview = "https://r2.sakurakat.systems/preview--fractured-elements-logo.png"
-location = "https://r2.sakurakat.systems/preview--fractured-elements-logo.pxo"
+  date        = "March 2024"
+  description = ["Designed logo for 'Fractured Elements'game.", "My contribution: Conceptualized and designed the logo using Pixelorama to represent the game's theme."]
+  location    = "https://r2.sakurakat.systems/preview--fractured-elements-logo.pxo"
+  preview     = "https://r2.sakurakat.systems/preview--fractured-elements-logo.png"
+  society     = "Pixel Art"
+  tags        = ["Pixel Art", "Logo Design", "Fractured Elements", "Pixelorama"]
+  title       = "Fractured Elements"
+  visible     = true
 
 [[others]]
-visible = false
-title = "Personal Logo"
-society = "Personal Project"
-date = "March 2024"
-description = [
-  "Designed a logo inspired by the creator's online username by combining and editing two emojis.",
-  "My contribution: Blended emojis and refined the design using Adobe Illustrator to create a cohesive logo.",
-]
-tags = ["Logo Design", "Emoji Art", "Adobe Illustrator"]
-preview = "https://r2.sakurakat.systems/preview--kibty.png"
-location = "https://r2.sakurakat.systems/favicon.svg"
+  date        = "March 2024"
+  description = ["Designed a logo inspired by the creator's online username by combining and editing two emojis.", "My contribution: Blended emojis and refined the design using Adobe Illustrator to create a cohesive logo."]
+  location    = "https://r2.sakurakat.systems/favicon.svg"
+  preview     = "https://r2.sakurakat.systems/preview--kibty.png"
+  society     = "Personal Project"
+  tags        = ["Logo Design", "Emoji Art", "Adobe Illustrator"]
+  title       = "Personal Logo"
+  visible     = false
 
 [[others]]
-description = ["Personal nixos and home-manager configurations."]
-visible = false
-title = "NixOS Config"
-society = "Nix"
-date = "October 2024"
-tags = ["Nix", "NixOS", "Linux", "dot files"]
-preview = "https://r2.sakurakat.systems/preview--nixos-config.png"
-location = "https://github.com/pawarherschel/nixos-config"
+  date        = "October 2024"
+  description = ["Personal nixos and home-manager configurations."]
+  location    = "https://github.com/pawarherschel/nixos-config"
+  preview     = "https://r2.sakurakat.systems/preview--nixos-config.png"
+  society     = "Nix"
+  tags        = ["Nix", "NixOS", "Linux", "dot files"]
+  title       = "NixOS Config"
+  visible     = false
 
-[bibliography]
-bibPath = ""
-refStyle = "apa"
-
-[[skills]]
-visible = true
-type = "Natural Languages"
-info = ["English", "Hindi", "Marathi"]
+[publications]
+  bibPath  = ""
+  keyList  = []
+  refStyle = "apa"
 
 [[skills]]
-visible = true
-type = "Software Tools"
-info = ["Git", "Photoshop", "Krita", "Godot", "Microsoft Word", "VRoid Studio"]
+  info    = ["English", "Hindi", "Marathi", "Finnish (learning)"]
+  type    = "Natural Languages"
+  visible = true
 
 [[skills]]
-visible = true
-type = "Knowledge Areas"
-info = [
-  "Docker",
-  "Cloudflare",
-  "Ansible",
-  "Linux",
-  "NixOS",
-  "Power Automate",
-  "Web Scraping",
-]
+  info    = ["Git", "Photoshop", "Krita", "Godot", "Microsoft Word", "VRoid Studio", "Typst", "jj"]
+  type    = "Software Tools"
+  visible = true
 
 [[skills]]
-visible = true
-type = "Personal Interests"
-info = [
-  "Manga & Scanlation",
-  "VRChat",
-  "Game Development",
-  "GPU Acceleration",
-  "NixOS",
-]
+  info    = ["Docker", "Cloudflare", "Ansible", "Linux", "NixOS", "Power Automate", "Web Scraping"]
+  type    = "Knowledge Areas"
+  visible = true
 
 [[skills]]
-visible = false
-type = "Projects"
-info = ["Rust", "GDScript"]
+  info    = ["Manga & Scanlation", "VRChat", "Game Development", "GPU Acceleration", "NixOS"]
+  type    = "Personal Interests"
+  visible = true
 
 [[skills]]
-visible = true
-type = "Libraries"
-info = ["cranelift", "rayon", "bevy", "tokio", "sqlx", "surrealdb"]
+  info    = ["Rust", "GDScript"]
+  type    = "Projects"
+  visible = false
+
+[[skills]]
+  info    = ["cranelift", "rayon", "bevy", "tokio", "sqlx", "surrealdb"]
+  type    = "Libraries"
+  visible = true
