@@ -177,7 +177,7 @@ metadata = "./metadata.toml"
   visible     = false
 
 [[others]]
-  date        = "March 2024"
+  date        = "2024"
   description = ["Designed logo for 'Fractured Elements'game.", "My contribution: Conceptualized and designed the logo using Pixelorama to represent the game's theme."]
   location    = "https://r2.sakurakat.systems/preview--fractured-elements-logo.pxo"
   preview     = "https://r2.sakurakat.systems/preview--fractured-elements-logo.png"
@@ -187,7 +187,7 @@ metadata = "./metadata.toml"
   visible     = true
 
 [[others]]
-  date        = "March 2024"
+  date        = "2023"
   description = ["Designed a logo inspired by the creator's online username by combining and editing two emojis.", "My contribution: Blended emojis and refined the design using Adobe Illustrator to create a cohesive logo."]
   location    = "https://r2.sakurakat.systems/favicon.svg"
   preview     = "https://r2.sakurakat.systems/preview--kibty.png"
