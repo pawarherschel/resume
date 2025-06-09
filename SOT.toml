@@ -141,7 +141,7 @@ metadata = "./metadata.toml"
   society     = "Personal Project"
   tags        = ["Rust", "Image Processing", "Color Quantization", "Krita", "GIMP", "CLI Tool"]
   title       = "Krita Palette Creator"
-  visible     = false
+  visible     = true
   [projects.location]
     github = "pawarherschel/krita-palette-creator"
 
@@ -155,6 +155,37 @@ metadata = "./metadata.toml"
   visible     = false
   [projects.location]
     github = "pawarherschel/raytracinginrust"
+
+[[projects]]
+  date        = "May 2025"
+  description = ["Participated in GameDev.tv Game Jam 2025, the theme was 'tiny worlds'", "Collaborated with people, I was the artist for the game", "Available to play on itch.io (https://pixelcreations.itch.io/your-own-size)", "My contribution: Made a dynamic background blur shader so people can apppreciate the background art, and contributed some artwork"]
+  preview     = "https://r2.sakurakat.systems/your-own-size--nerd_room_background.png"
+  society     = "GameDev.tv Game Jam 2025"
+  tags        = ["Game Development", "Godot", "GLSL"]
+  title       = "Your Own Size"
+  visible     = true
+
+[[projects]]
+  date        = "June 2025"
+  description = ["Participated in 'Bevy Jam #6', the theme was 'Chain Reaction'", "Learnt how to use the bevy game engine, and thus, used ECS for the game, createda leaderboard system.", "Available to play on itch.io (https://pawarherschel.itch.io/parrylord)", "My contribution: Solo Developer"]
+  preview     = "https://r2.sakurakat.systems/parrylord--cover.png"
+  society     = "Bevy Jam #6"
+  tags        = ["Game Development", "Bevy", "Rust", "ECS"]
+  title       = "Parrylord"
+  visible     = true
+  [projects.location]
+    github = "pawarherschel/parrylord"
+
+
+[[others]]
+  date        = "May 2025"
+  description = ["Artwork for the game 'Your Own Size'", "My contribution: Wood Tileset, Collectibles, itch.io page background, enemies, background art"]
+  location    = "https://github.com/pawarherschel/your-own-size-assets"
+  preview     = "https://r2.sakurakat.systems/your-own-size--nerd_room.png"
+  society     = "Pixel Art"
+  tags        = ["Pixel Art", "Your Own Size"]
+  title       = "Your Own Size"
+  visible     = true
 
 [[others]]
   date        = "2021"
@@ -212,12 +243,12 @@ metadata = "./metadata.toml"
   refStyle = "apa"
 
 [[skills]]
-  info    = ["English", "Hindi", "Marathi", "Finnish (learning)"]
-  type    = "Natural Languages"
+  info    = ["English", "Hindi", "Marathi"]
+  type    = "Languages"
   visible = true
 
 [[skills]]
-  info    = ["Git", "Photoshop", "Krita", "Godot", "Microsoft Word", "VRoid Studio", "Typst", "jj"]
+  info    = ["Git", "Krita", "Godot", "VRoid Studio", "Typst", "jj"]
   type    = "Software Tools"
   visible = true
 
@@ -239,4 +270,4 @@ metadata = "./metadata.toml"
 [[skills]]
   info    = ["cranelift", "rayon", "bevy", "tokio", "sqlx", "surrealdb"]
   type    = "Libraries"
-  visible = true
+  visible = false
