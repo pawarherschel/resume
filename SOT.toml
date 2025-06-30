@@ -93,7 +93,7 @@ metadata = "./metadata.toml"
 [[projects]]
   date        = "2023 - Present"
   description = ["A simple program to find out the various friend circles which might exist via the data collected by VRCX", "Written in Rust, it uses the SQLite database created by VRCX to find out the friend circles", "My contribution: Implemented data-mining algorithms in Rust"]
-  preview     = "https://r2.sakurakat.systems/preview--vrcx-insights-resized-0.25.jpg"
+  preview     = "https://r2.sakurakat.systems/preview--vrcx-insights-resized-0.15.jpg"
   society     = "Personal Project"
   tags        = ["Data Mining", "Rust", "SQLite", "SQLx", "tokio"]
   title       = "VRCX Insights"
