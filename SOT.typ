@@ -1,13 +1,29 @@
 #let SOT = toml("SOT.toml")
 
-#let metadata = toml(SOT.metadata)
+#let SOT-keys = SOT.keys().map(it => (it, it)).to-dict()
 
-#let get-or-none(dict, key) = if dict.keys().contains(key) {
-  dict.at(key)
+#let get-or-none(
+  dict,
+  key,
+  eval: false,
+  mode: "markup",
+) = if dict.keys().contains(key) {
+  if eval {
+    std.eval(dict.at(key), mode: mode)
+  } else {
+    dict.at(key)
+  }
 } else {
   none
 }
 
+#let name = get-or-none(SOT, "name", eval: true)
+#let bio = get-or-none(SOT, "bio", eval: true)
+#let location = get-or-none(SOT, "location", eval: true)
+#let location-line = get-or-none(SOT, "location_line", eval: true)
+#let photo-path = get-or-none(SOT, "photo_path")
+#let show-photo = get-or-none(SOT, "show_photo")
+#let info = get-or-none(SOT, "info")
 #let certificates = get-or-none(SOT, "certificates")
 #let education = get-or-none(SOT, "education")
 #let projects = get-or-none(SOT, "projects")
@@ -15,12 +31,36 @@
 #let skills = get-or-none(SOT, "skills")
 #let publications = get-or-none(SOT, "publications")
 
-#let metaCVEntry(key, section-title) = {
-  import "@preview/brilliant-cv:2.0.4": cvSection, cvEntry, hBar
-
-  let cvSection = cvSection.with(metadata: metadata)
-  let cvEntry = cvEntry.with(metadata: metadata)
-
+#let metaCVEntry(
+  key,
+  section-title,
+  cvSection: (
+    title: [],
+    content,
+  ) => {
+    title
+    content
+  },
+  cvEntry: (
+    title: none,
+    society: none,
+    date: none,
+    location: none,
+    description: none,
+    logo: none,
+    tags: none,
+  ) => {
+    repr(title)
+    repr(society)
+    repr(date)
+    repr(location)
+    repr(description)
+    repr(logo)
+    repr(tags)
+  },
+  cvCertificate: it => repr(it),
+  highlight-func: none,
+) = {
   let arr = get-or-none(SOT, key)
 
   if arr != none {
@@ -29,54 +69,66 @@
       return
     }
 
-    cvSection(section-title)
+    cvSection(title: section-title, {
+      for entry in arr {
+        let title = get-or-none(entry, "title")
+        let society = get-or-none(entry, "society", eval: true)
+        let date = get-or-none(entry, "date", eval: true)
+        let location = get-or-none(entry, "location")
+        let logo = get-or-none(entry, "logo")
+        let description = get-or-none(entry, "description")
+        let tags = get-or-none(entry, "tags")
+        let preview = get-or-none(entry, "preview", eval: true)
 
-    for entry in arr {
-      let title = get-or-none(entry, "title")
-      let society = get-or-none(entry, "society")
-      let date = get-or-none(entry, "date")
-      let location = get-or-none(entry, "location")
-      let logo = get-or-none(entry, "logo")
-      let description = get-or-none(entry, "description")
-      let tags = get-or-none(entry, "tags")
-      let preview = get-or-none(entry, "preview")
+        // preview     = "https://r2.sakurakat.systems/covuni-experience-banner.jpg"
 
-      // preview     = "https://r2.sakurakat.systems/covuni-experience-banner.jpg"
+        if location == none {} else if type(location) == dictionary {
+          if location.keys().contains("github") {
+            location = link("https://github.com/" + location.github)
+          } else { panic("unknown location") }
+        } else {
+          location = eval(location, mode: "markup")
+        }
 
-      if type(location) == dictionary {
-        if location.keys().contains("github") {
-          location = link("https://github.com/" + location.github)
-        } else { panic("unknown location") }
-      } else {
-        none
+        let description = if description != () {
+          description
+            .map(line => {
+              line = eval(mode: "markup", line)
+              let my-contribution-regex = regex("My contribution: ")
+              show my-contribution-regex: it => {
+                if highlight-func == none {
+                  highlight(it)
+                } else {
+                  highlight-func(it)
+                }
+              }
+              [- #line]
+            })
+            .join()
+        } else { none }
+
+        let logo = if logo != none and logo != () {
+          image(logo)
+        } else { "" }
+
+        let tags = if tags != none {
+          tags
+        } else { () }
+
+        if logo == "" and preview != none {
+          logo = align(center)[#link(preview.dest)[🔗]]
+        }
+
+        cvEntry(
+          title: title,
+          society: society,
+          date: date,
+          location: location,
+          description: description,
+          logo: logo,
+          tags: tags,
+        )
       }
-
-      let description = if description != () {
-        description.map(line => [- #line]).join()
-      } else { none }
-
-      let logo = if logo != none and logo != () {
-        image(logo)
-      } else { "" }
-
-      let tags = if tags != none {
-        tags
-      } else { () }
-
-      if logo == "" and preview != none {
-        logo = align(center)[#link(preview)[🔗]]
-      }
-
-      cvEntry(
-        title: title,
-        society: society,
-        date: date,
-        location: location,
-        description: description,
-        metadata: metadata,
-        logo: logo,
-        tags: tags,
-      )
-    }
+    })
   }
 }
