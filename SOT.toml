@@ -1,9 +1,9 @@
-bio           = "Software Engineer specializing in Rust, and game development. My dream is to reduce barriers to building high-performance software, especially in multithreading and GPU/TPU utilization. Beyond technical work, I am committed to empowering others and fostering safe, inclusive learning environments. I write occasionally, scan the QR code for my blog!"
-location      = "Navi Mumbai, India (UTC+05:30 / IST)"
-location_line = "Open to relocate -- employer sponsorship required"
-name          = "Herschel Pravin Pawar"
-photo_path    = "src/photo.png"
-show_photo    = false
+bio      = "Software Engineer specializing in Rust, and game development. My dream is to reduce barriers to building high-performance software, especially in multithreading and GPU/TPU utilization. Beyond technical work, I am committed to empowering others and fostering safe, inclusive learning environments. I write occasionally, scan the QR code for my blog!"
+location = "Navi Mumbai, India (UTC+05:30 / IST)"
+# location_line = "Open to relocate -- employer sponsorship required"
+name       = "Herschel Pravin Pawar"
+photo_path = "src/photo.png"
+show_photo = false
 [info]
   email    = "pawarherschel@gmail.com"
   github   = "pawarherschel"
@@ -42,22 +42,22 @@ show_photo    = false
   society     = "University of Mumbai"
   title       = "Bachelors of Engineering in Information Technology"
 
-[[education]]
-  date        = "2018 - 2020"
-  description = []
-  location    = "Greenfingers Global School, Kharghar, Navi Mumbai, India"
-  logo        = "src/logos/gfgs.png"
-  society     = "Central Board of Secondary Education"
-  title       = "Higher Secondary School Certificate"
-
-[[education]]
-  date        = "2008 - 2018"
-  description = []
-  location    = "Sanjivani International School, Kharghar, Navi Mumbai, India"
-  logo        = "src/logos/sis.png"
-  society     = "Indian Certificate of Secondary Education"
-  title       = "Secondary School Certificate"
-
+# [[education]]
+#   date        = "2018 - 2020"
+#   description = []
+#   location    = "Greenfingers Global School, Kharghar, Navi Mumbai, India"
+#   logo        = "src/logos/gfgs.png"
+#   society     = "Central Board of Secondary Education"
+#   title       = "Higher Secondary School Certificate"
+# 
+# [[education]]
+#   date        = "2008 - 2018"
+#   description = []
+#   location    = "Sanjivani International School, Kharghar, Navi Mumbai, India"
+#   logo        = "src/logos/sis.png"
+#   society     = "Indian Certificate of Secondary Education"
+#   title       = "Secondary School Certificate"
+# 
 [[projects]]
   date = "April 2024 - Present"
   description = [
@@ -144,7 +144,7 @@ show_photo    = false
   society = "Personal Project"
   tags = ["Data Mining", "Rust", "SQLite", "SQLx", "tokio"]
   title = "VRCX Insights"
-  visible = false
+  visible = true
   [projects.location]
     github = "pawarherschel/vrcx-insights"
 
@@ -193,7 +193,7 @@ show_photo    = false
   society = "Personal Project"
   tags = ["Brainfuck", "Compiler", "Cranelift", "Rust"]
   title = "Brainfuck Compiler with Cranelift"
-  visible = false
+  visible = true
   [projects.location]
     github = "pawarherschel/BFCranelift"
 
@@ -215,7 +215,7 @@ show_photo    = false
     "CLI Tool",
   ]
   title = "Krita Palette Creator"
-  visible = false
+  visible = true
   [projects.location]
     github = "pawarherschel/krita-palette-creator"
 

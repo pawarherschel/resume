@@ -26,6 +26,14 @@ main = "file:main.typ"
 root = "file:."
 system-fonts = true
 
+[[document]]
+font-paths = ["file:."]
+id = "file:resume.typ"
+inputs = []
+main = "file:resume.typ"
+root = "file:."
+system-fonts = true
+
 [[route]]
 id = "file:lib.typ"
 priority = 256
@@ -36,6 +44,10 @@ priority = 256
 
 [[route]]
 id = "file:SOT.typ"
+priority = 256
+
+[[route]]
+id = "file:resume.typ"
 priority = 256
 
 [[task]]
@@ -55,6 +67,13 @@ when = "never"
 [[task]]
 document = "file:main.typ"
 id = "file:main.typ"
+output = ""
+type = "export-pdf"
+when = "never"
+
+[[task]]
+document = "file:resume.typ"
+id = "file:resume.typ"
 output = ""
 type = "export-pdf"
 when = "never"
