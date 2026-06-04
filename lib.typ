@@ -90,7 +90,7 @@
 #let container(title: "", content) = {
   title = text(size: 2em, fill: highlight-color)[#fake-smallcaps(title)]
   block(
-    above: 2em,
+    above: 1em,
     stroke: container-border-color,
     width: 100%,
     inset: 14pt,
@@ -130,7 +130,7 @@
 )
 
 #let qrcode = barcode(
-  format-link("homepage", info.homepage).dest,
+  format-link("homepage", SOT.homepage).dest,
   "QRCode",
   options: (
     scale: 10.0,
@@ -145,7 +145,7 @@
     qrcode.source,
     fit: "contain",
     height: 1fr,
-    alt: format-link("homepage", info.homepage).dest,
+    alt: format-link("homepage", SOT.homepage).dest,
   ),
   caption: {
     set text(fill: highlight-color)
@@ -156,8 +156,10 @@
 #let bio = {
   bio
   par[
-    Currently based in #location\
-    #location-line
+    #if location != none [
+      Currently based in #location\
+      #location-line
+    ]
   ]
   block(
     width: 99%,
@@ -203,8 +205,7 @@
       let (height, width) = measure(text([W]))
       box(
         stroke: 1pt + highlight-color,
-        outset: (y: height / 2),
-        inset: (x: width),
+        inset: (x: width * 0.5, y: height * 0.2),
         {
           it
         },
@@ -304,7 +305,7 @@
   )
   set highlight(fill: highlight-color)
   block(
-    height: 20%,
+    height: SOT.header_height * 1%,
     grid(
       columns: (3fr, ..if show-photo { (1fr,) }),
       column-gutter: 1%,
@@ -315,7 +316,7 @@
           grid(
             columns: (1fr, auto),
             column-gutter: 2%,
-            bio, link(format-link("homepage", info.homepage).dest, qrcode-cta),
+            bio, link(format-link("homepage", SOT.homepage).dest, qrcode-cta),
           ),
         )
       },
