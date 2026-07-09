@@ -29,13 +29,13 @@ show_photo    = false
   # title = "Certificate of Participation in Coventry University's School of Computing, Mathematics and Data Science Summer School in Game Development"
   # url = "https://r2.sakurakat.systems/covuni-gamedev.pdf"
 
-[[education]]
-  date        = "1st July 2024 - 26th July 2024"
-  description = []
-  location    = "CU Coventry, 8 Mile Lane, Coventry CV1 2TU, United Kingdom"
-  logo        = "src/logos/covuni.jpg"
-  society     = "Coventry University"
-  title       = "Global Summer School"
+  # [[education]]
+  #   date        = "1st July 2024 - 26th July 2024"
+  #   description = []
+  #   location    = "CU Coventry, 8 Mile Lane, Coventry CV1 2TU, United Kingdom"
+  #   logo        = "src/logos/covuni.jpg"
+  #   society     = "Coventry University"
+  #   title       = "Global Summer School"
 
 [[education]]
   date        = "2020 - 2024"
